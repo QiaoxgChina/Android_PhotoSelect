@@ -3,26 +3,19 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-   <!--  <LinearLayout
-        android:id="@+id/left_layout"
-        android:layout_width="2dp"
-        android:layout_height="fill_parent"
-        android:layout_alignParentLeft="true"
-        android:orientation="vertical" /> -->
-
-    <View 
+    <View
         android:id="@+id/left_layout"
         android:layout_width="2dp"
         android:layout_height="fill_parent"
         android:layout_alignParentLeft="true" />
-    
+
     <RelativeLayout
         android:id="@+id/sticker_layout"
         android:layout_width="70dip"
         android:layout_height="100dip"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/left_layout"
-        android:background="#3b3f49" >
+        android:background="#3b3f49">
 
         <ImageView
             android:id="@+id/sticker_img"
@@ -43,13 +36,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:visibility="gone"/>
+            android:visibility="gone" />
     </RelativeLayout>
 
     <View
         android:id="@+id/right_layout"
         android:layout_width="2dp"
         android:layout_height="fill_parent"
-        android:layout_toRightOf="@+id/sticker_layout"/>
+        android:layout_toRightOf="@+id/sticker_layout" />
 
 </RelativeLayout>

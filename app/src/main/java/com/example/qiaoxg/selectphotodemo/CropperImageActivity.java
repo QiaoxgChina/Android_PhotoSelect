@@ -141,14 +141,14 @@ public class CropperImageActivity extends BaseActivity {
             public void onClick(View v) {
                 bar.setVisibility(View.VISIBLE);
                 // 启动线程来执行任务
-                new Thread() {
-                    public void run() {
+//                new Thread() {
+//                    public void run() {
                         getViewBitmap();
                         Message m = new Message();
                         m.what = 0x111;
                         mHandler.sendMessage(m);
-                    }
-                }.start();
+//                    }
+//                }.start();
             }
         });
     }

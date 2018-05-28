@@ -130,7 +130,7 @@ public class ResultActivity extends Activity {
 		
 		mCameraSdkParameterInfo.setPosition(position);
 		Intent intent = new Intent(); 
-		intent.setClassName(activity.getApplication(), "com.muzhi.camerasdk.PreviewActivity");
+		intent.setClass(activity.getApplication(), PreviewActivity.class);
 		Bundle b=new Bundle();
 		b.putSerializable(CameraSdkParameterInfo.EXTRA_PARAMETER, mCameraSdkParameterInfo);
 		intent.putExtras(b);
@@ -140,7 +140,7 @@ public class ResultActivity extends Activity {
 	//本地相册选择
 	public void openCameraSDKPhotoPick(Activity activity,ArrayList<String> list) {
 		Intent intent = new Intent(); 
-		intent.setClassName(activity.getApplication(), "com.muzhi.camerasdk.PhotoPickActivity"); 
+		intent.setClass(activity.getApplication(), PhotoPickActivity.class);
 		Bundle b=new Bundle();
 		
 		b.putSerializable(CameraSdkParameterInfo.EXTRA_PARAMETER, mCameraSdkParameterInfo);

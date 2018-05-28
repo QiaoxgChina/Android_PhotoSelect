@@ -137,7 +137,7 @@ public class FilterImageActivity extends BaseActivity {
                 // TODO 裁剪图片
                 Constants.bitmap = ((EfectFragment) fragments.get(current)).getCurrentBitMap();
                 Intent intent = new Intent();
-                intent.setClassName(getApplication(), "com.muzhi.camerasdk.CutActivity");
+                intent.setClass(getApplication(), CutActivity.class);
                 startActivityForResult(intent, Constants.RequestCode_Croper);
             }
         });
@@ -156,7 +156,7 @@ public class FilterImageActivity extends BaseActivity {
                 // TODO 图片增强
                 Constants.bitmap = ((EfectFragment) fragments.get(current)).getCurrentBitMap();
                 Intent intent = new Intent();
-                intent.setClassName(getApplication(), "com.muzhi.camerasdk.PhotoEnhanceActivity");
+                intent.setClass(getApplication(), PhotoEnhanceActivity.class);
                 startActivityForResult(intent, Constants.RequestCode_Croper);
             }
         });
@@ -168,7 +168,7 @@ public class FilterImageActivity extends BaseActivity {
                 Constants.bitmap = ((EfectFragment) fragments.get(current)).getCurrentBitMap();
                 Intent intent = new Intent();
                 intent.putExtra("path", imageList.get(0));
-                intent.setClassName(getApplication(), "com.muzhi.camerasdk.GraffitiActivity");
+                intent.setClass(getApplication(), GraffitiActivity.class);
                 startActivityForResult(intent, Constants.RequestCode_Croper);
             }
         });

@@ -4,6 +4,5 @@
     android:layout_width="45dp"
     android:layout_height="45dp"
     android:layout_marginRight="2.0dip"
-    android:scaleType="centerCrop" 
-    android:contentDescription="@null" >
-</ImageView>
+    android:contentDescription="@null"
+    android:scaleType="centerCrop"></ImageView>

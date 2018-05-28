@@ -96,7 +96,7 @@
                 android:src="@drawable/camera_flip" />
             
         </RelativeLayout>
-        <com.muzhi.mtools.camerasdk.view.CameraGrid
+        <com.muzhi.camerasdk.library.views.CameraGrid
             android:id="@+id/masking"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

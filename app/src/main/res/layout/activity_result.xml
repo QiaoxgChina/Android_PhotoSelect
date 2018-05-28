@@ -30,7 +30,7 @@
         android:columnWidth="90dip"
         android:horizontalSpacing="5dp"
         android:listSelector="#00000000"
-        android:numColumns="5"
+        android:numColumns="4"
         android:padding="5dip"
         android:scrollbars="none"
         android:verticalSpacing="5dp" />
